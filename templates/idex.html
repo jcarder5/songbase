@@ -1,5 +1,5 @@
 {% extends "home-base.html"%}
-{% block page_content %}
+
 {% block head %}
 {{super()}}
 <style media="screen">
@@ -8,8 +8,9 @@
   }
 </style>
 {%endblock%}
-{%block title}
+{%block title%}
 Homepage
 {% endblock %}
+{% block page_content %}
 <h1>this is index with template reuse</h1>
 {% endblock %}

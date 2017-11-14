@@ -1,6 +1,11 @@
-{%extends "home-base.html"%}
+{%extends "home.html"%}
+{% block title %}Courses{% endblock %}
+{% block head%}
+  {{ super() }}
+{% endblock%}
 {% block page_content %}
-    <h1>these are the songs</h1>
+
+    <h1>Browse songs: </h1>
   <ul>
     {% for song in songs%}
 
@@ -8,6 +13,6 @@
 
 
     {% endfor %}
-    <img src="static/img/soccerpic.jpeg" alt="">
+
   </ul>
   {% endblock %}
